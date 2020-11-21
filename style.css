@@ -1,0 +1,31 @@
+h1,
+p {
+  font-family: Lato;
+  font-size: 1.2rem;
+}
+
+.c-1,
+.c-2 {
+  color: red;
+}
+
+.c-3,
+.c-4 {
+  color: black;
+}
+
+.c-1::before {
+  content: "♥";
+}
+
+.c-2::before {
+  content: "♦";
+}
+
+.c-3::before {
+  content: "♣";
+}
+
+.c-4::before {
+  content: "♠";
+}
