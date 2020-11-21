@@ -168,7 +168,7 @@ let getWinner = arr => {
     return compareCards(out, "TOP");
   }
 
-  return -11;
+  return -1;
 };
 
 export { checkCard, getWinner };

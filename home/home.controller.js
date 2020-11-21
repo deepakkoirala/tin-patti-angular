@@ -6,7 +6,7 @@ import * as _ from "lodash";
 class HomeCtrl {
   table = [];
   tableCheck = [];
-  totalPlayers = 2;
+  totalPlayers = 3;
   winner;
 
   constructor($scope) {
@@ -51,11 +51,11 @@ class HomeCtrl {
     this.table = distribute(deck, this.totalPlayers);
     console.log("table", this.table);
 
-    this.table = [
-      [{ type: 2, val: 5 }, { type: 4, val: 6 }, { type: 4, val: 6 }],
-      [{ type: 2, val: 7 }, { type: 3, val: 6 }, { type: 3, val: 6 }],
-      [{ type: 2, val: 5 }, { type: 1, val: 8 }, { type: 1, val: 2 }]
-    ];
+    // this.table = [
+    //   [{ type: 2, val: 5 }, { type: 4, val: 6 }, { type: 4, val: 6 }],
+    //   [{ type: 2, val: 7 }, { type: 3, val: 6 }, { type: 3, val: 6 }],
+    //   [{ type: 2, val: 5 }, { type: 1, val: 8 }, { type: 1, val: 2 }]
+    // ];
 
     this.tableCheck = this.table.map(d => {
       let i = checkCard(arr, d);
