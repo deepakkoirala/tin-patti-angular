@@ -57,19 +57,15 @@ class HomeCtrl {
     //   [{ type: 2, val: 5 }, { type: 1, val: 8 }, { type: 1, val: 2 }]
     // ];
 
-    this.tableCheck = this.table.map(d => {
-      let i = checkCard(arr, d);
-      i["items"] = Object.assign([], i.items.reverse());
-      return i;
+    this.tableCheck = this.table.map((d, i) => {
+      let obj = checkCard(arr, d);
+      obj["items"] = Object.assign([], obj.items.reverse());
+      obj["player"] = i + 1;
+      return obj;
     });
 
-    this.winner = getWinner(
-      this.table.map((d, i) => {
-        let ob = checkCard(arr, d);
-        ob["player"] = i + 1;
-        return ob;
-      })
-    );
+    this.winner = getWinner(this.tableCheck);
+
     console.log("winner", this.winner);
   }
 }
