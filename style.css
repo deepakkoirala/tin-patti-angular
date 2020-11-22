@@ -3,7 +3,13 @@ p {
   font-family: Lato;
   font-size: 1.2rem;
 }
-
+.icw {
+  padding-left:30px;
+}
+.ic {
+  width:50px;
+  display:inline-block;
+}
 .c-1,
 .c-2 {
   color: red;
