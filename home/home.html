@@ -6,7 +6,7 @@
   Player {{$index+1}}: <br>
   <div class="icw"><span ng-repeat="i in x.items; track by $index"
     ><span class="ic c-{{i.type}}"> {{$ctrl.convert(i.val)}}</span>
-  </span> [{{x.msg}}]</div>
+  </span> <span class="stats">[{{x.msg}}]</span></div>
 </h1>
 <br>
 <h1 class="winner" ng-repeat="win in $ctrl.winner; track by $index">

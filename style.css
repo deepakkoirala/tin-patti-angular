@@ -18,6 +18,10 @@ button {
 body {
   background-color:#eee;
 }
+.stats {
+  color: #555;
+  font-size:12px;
+}
 .shuffle {
   color:white;
   background-color: red;
