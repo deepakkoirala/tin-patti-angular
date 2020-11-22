@@ -45,7 +45,14 @@ let compareCards = (arr, type = "") => {
       let fd = out.filter(d => d.val == out[0].val);
       if (fd.length > 1) {
         let out2 = sortIt(fd, "val2");
-        return [out2[0]];
+
+        let sd = out2.filter(d=>d.val2 == out2[0].val2)
+        if(sd.length>1){
+          console.log("MULTIPLE WINNERS");
+          return sd;
+        }
+        else
+          return [out2[0]];
       } else return fd;
     }
     /**While Color */
