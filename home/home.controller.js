@@ -21,7 +21,7 @@ class HomeCtrl {
 
   initCards() {
     let arr = [
-      // "1",
+      "14",
       "2",
       "3",
       "4",
@@ -33,7 +33,7 @@ class HomeCtrl {
       "10",
       "11",
       "12",
-      "14"
+      "13"
     ];
 
     let cardType = ["♥", "♦", "♣", "♠"];
