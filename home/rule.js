@@ -59,7 +59,7 @@ let compareCards = (arr, type = "") => {
     //Check for second card and third card.
     else if (type == "COLOR" || type == "TOP") {
       out = sortIt(arr);
-      let fd = arr.filter(d => d.val == arr[0].val);
+      let fd = arr.filter(d => d.val == out[0].val);
       //case where same first digit
       if (fd.length > 1) {
         console.log("FIRST DIGIT IS SAME");
