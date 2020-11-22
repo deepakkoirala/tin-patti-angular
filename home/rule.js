@@ -156,7 +156,7 @@ let getWinner = arr => {
   });
 
   if (compareCards(out, "JUTT")) {
-    console.log("total jutt", out);
+    //console.log("total jutt", out);
     return compareCards(out, "JUTT");
   }
 
