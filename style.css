@@ -19,6 +19,13 @@ body {
   padding:10px;
   border-radius: 10px;
 }
+.winner{
+  color:white;
+  background-color:green;
+  margin-bottom: 20px;
+  padding:10px;
+  text-transform: uppercase;
+}
 .icw {
   padding-left:30px;
   background-color: #ddd;
