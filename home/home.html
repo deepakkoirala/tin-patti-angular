@@ -1,14 +1,14 @@
 <h1>Total Players: {{$ctrl.totalPlayers}}</h1>
 <button ng-click="$ctrl.totalPlayers = $ctrl.totalPlayers - 1">-</button>
 <button ng-click="$ctrl.totalPlayers = $ctrl.totalPlayers + 1">+</button>
+<button ng-click="$ctrl.initCards()">SHUFFLE</button>
 <h1 ng-repeat="x in $ctrl.tableCheck; track by $index">
   Player {{$index+1}}: {{x.msg}} -
   <span ng-repeat="i in x.items; track by $index"
     ><span class="c-{{i.type}}"> {{$ctrl.convert(i.val)}}</span>
   </span>
 </h1>
-<button ng-click="$ctrl.initCards()">SHUFFLE</button>
 <br /><br />
 <h1 style="color:green;" ng-repeat="win in $ctrl.winner; track by $index">
-  Winner: {{win.player}} - ({{win.msg}})
+  Winner: Player {{win.player}} - ({{win.msg}})
 </h1>
