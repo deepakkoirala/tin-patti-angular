@@ -93,6 +93,7 @@ let compareCards = (arr, type = "") => {
 
 let getWinner = arr => {
   let out;
+  let cc;
 
   /***
    * Logic to check TRILE
@@ -103,8 +104,9 @@ let getWinner = arr => {
     }
   });
 
-  if (compareCards(out)) {
-    return compareCards(out);
+  if (cc=compareCards(out)) {
+    //return compareCards(out);
+    return cc;
   }
 
   /***
@@ -114,8 +116,9 @@ let getWinner = arr => {
     if (d.msg == "DOUBLE_RUN") return true;
   });
 
-  if (compareCards(out, "DOUBLE_RUN")) {
-    return compareCards(out, "DOUBLE_RUN");
+  if (cc=compareCards(out, "DOUBLE_RUN")) {
+    //return compareCards(out, "DOUBLE_RUN");
+    return cc;
   }
 
   /***
@@ -127,8 +130,9 @@ let getWinner = arr => {
     }
   });
 
-  if (compareCards(out, "RUN")) {
-    return compareCards(out, "RUN");
+  if (cc=compareCards(out, "RUN")) {
+    //return compareCards(out, "RUN");
+    return cc;
   }
 
   /***
@@ -141,9 +145,10 @@ let getWinner = arr => {
     }
   });
 
-  if (compareCards(out, "COLOR")) {
+  if (cc=compareCards(out, "COLOR")) {
     // console.log("total color", out);
-    return compareCards(out, "COLOR");
+    //return compareCards(out, "COLOR");
+    return cc;
   }
 
   /***
@@ -155,24 +160,25 @@ let getWinner = arr => {
     }
   });
 
-  if (compareCards(out, "JUTT")) {
+  if (cc=compareCards(out, "JUTT")) {
     //console.log("total jutt", out);
-    return compareCards(out, "JUTT");
+    //return compareCards(out, "JUTT");
+    return cc;
   }
 
   /***
    * Logic for Check TOP
-   */
-
+   **/
   out = arr.filter(d => {
     if (d.msg == "TOP") {
       return true;
     }
   });
 
-  if (compareCards(out, "TOP")) {
+  if (cc = compareCards(out, "TOP")) {
     // console.log("total top", out);
-    return compareCards(out, "TOP");
+    //return compareCards(out, "TOP");
+    return cc;
   }
 
   return -1;
