@@ -3,6 +3,17 @@ p {
   font-family: Lato;
   font-size: 1.2rem;
 }
+body {
+  background-color:#eee;
+}
+.shuffle {
+  color:white;
+  background-color: red;
+  float:right;
+  font-size: 15px;
+  padding:10px;
+  border-radius: 10px;
+}
 .icw {
   padding-left:30px;
 }
