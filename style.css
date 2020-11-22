@@ -22,6 +22,8 @@ body {
 .icw {
   padding-left:30px;
   background-color: #ddd;
+  padding-top:5px;
+  padding-bottom: 5px;
 }
 .ic {
   width:50px;
