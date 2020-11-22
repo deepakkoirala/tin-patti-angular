@@ -3,6 +3,13 @@ p {
   font-family: Lato;
   font-size: 1.2rem;
 }
+.totp{
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ccc;
+  color:black;
+  padding:10px;
+}
 button {
   color:black;
   font-weight: bold;
